@@ -24,8 +24,10 @@
     line-height: 1.2;
     list-style: none;
   }
-  .Weather img{
+  .Weather .icon{
     display: inline;
+    position: relative;
+    top: 7px;
   }
   
   .Weather .temperature {
@@ -35,9 +37,7 @@
     line-height: 54px;
     font-weight: 400;
     margin-left: 10px;
-    display: inline;
-    position: relative;
-    bottom: -13px;
+    display: inline-block;
   }
   
   
@@ -47,6 +47,6 @@
     font-weight: 400;
     position: relative;
     line-height: 1;
-    top: -8px;
+    top: -18px;
     display: inline;
   }
