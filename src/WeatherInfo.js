@@ -13,7 +13,7 @@ return(
 <div className="row">
     <div className="col-6">
 <div className="mt-7 icon">
-<WeatherIcon code={props.data.icon}/>        
+<WeatherIcon code={props.data.icon} size={52}/>        
 </div>
 <div className="temperature ">{Math.round(props.data.temperature)}</div>
 <div className="unit mt-3">°C</div>
