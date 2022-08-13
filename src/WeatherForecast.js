@@ -42,7 +42,7 @@ if(loaded){
 }
   
 else {
-  //let apiKey ="f434eda7b7f505e61af8cb42d6657dfa";
+  let apiKey ="f434eda7b7f505e61af8cb42d6657dfa";
   let latitude = props.coordinates.lat;
   let longitude = props.coordinates.lon;
 
