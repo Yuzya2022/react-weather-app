@@ -9,9 +9,9 @@ const [weatherData, setWeatherData] = useState({ready: false});
 const [city, setCity] = useState (props.defaultCity);
 
 function handleResponse(response){
-    console.log(response.data);
     setWeatherData({
         ready: true,
+        coordinates: response.data.coord,
         temperature: response.data.main.temp,
         wind: response.data.wind.speed,
         city: response.data.name,
@@ -59,7 +59,7 @@ if (weatherData.ready) {
             </div>
             </form>
             <WeatherInfo data={weatherData}/>
-            <WeatherForecast />
+            <WeatherForecast coordinates={weatherData.coordinates}/>
         </div>
         );
     
