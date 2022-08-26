@@ -32,7 +32,7 @@ if(loaded){
         <div className="col">
         <WeatherForecastDay data={forecast[3]} />
         </div>
-        <div className="col">
+        <div className="col d-none d-sm-flex">
         <WeatherForecastDay data={forecast[4]} />
         </div>
       </div>
